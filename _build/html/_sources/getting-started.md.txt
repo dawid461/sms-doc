@@ -1,0 +1,10 @@
+#H1 Rozpoczęcie pracy z Sales Managment Software(w skrócie SMS).
+
+SMS pomaga firmom w łatwy sposób zarządzać zespołami sprzedażowymi z jednego miejsca. Celem aplikacji jest:
+1. Wyznaczanie / definiowanie celów sprzedażowych zarówno indywidualnych jak i grupowych
+2. Sprawne monitorowanie i raportowanie postępów sprzedażowych.
+3. Ułatwienie komunikacji w zespole (czat z podziałem na kanały, możliwość wysyłania ogłoszeń/ powiadomień ) .
+4. Automatyczne rozliczanie prowizji sprzedażowej.
+5. Motywowanie pracowników oraz wprowadzenie elementów rywalizacji w zespole ( tworzenie rankingów handlowców, graficzna wizualizacja osiągniętych wyników i obecnych braków ).
+6. Automatyczne rozsyłanie raportów sprzedażowych według zdefiniowanego schematu.
+
