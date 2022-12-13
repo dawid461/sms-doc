@@ -29,9 +29,9 @@ Sales Managment Software(w skrócie SMS) pomaga firmom w łatwy sposób zarządz
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: Panel użytkownika:  
+   :caption: Interfejs użytkownika:  
 
-   Options/first-step.rst
+   Options/first-steps.rst
    
 .. toctree::
    :maxdepth: 2

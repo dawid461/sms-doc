@@ -1,4 +1,0 @@
-Pierwszy krok
-+++++++++++++
-Panel logowania
-===============

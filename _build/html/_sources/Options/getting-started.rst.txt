@@ -8,7 +8,7 @@ Połączenie internetowe
 Aby uniknąć problemów z zapisywaniem podczas korzystania z aplikacji SMS, upewnij się, że połączenie internetowe jest stabilne.
 
 Przeglądarka na komputerze
-=====================
+==========================
 Zaktualizuj przeglądarki na urządzeniu do najnowszej wersji i upewnij się, że obsługa JavaScript jest włączona:
 
 * Google Chrome, wersja 57 lub nowsza
