@@ -1,5 +1,6 @@
 Pierwsze kroki
 ++++++++++++++
+
 Panel logowania
 ===============
 Aby zalogować się do aplikacji SMS należy przejść do panelu logowania i w polu "Adres Email" podać maila oraz w polu "Hasło" podać hasło do konta.
@@ -8,9 +9,14 @@ Aby zalogować się do aplikacji SMS należy przejść do panelu logowania i w p
         :width: 600
     
 
+
+
 Resetowanie hasła
 =================
 Reset hasła do Twojego konta SMS jest możliwy po naciśnięciu w panelu logowania przycisku "Odzyskaj Hasło" znajdującego się pod przyciskiem "Zaloguj".
+Następnie należy postępować zgodnie z instrukcjami wyświetlanymi na ekranie.
+
+
 
 Panel startowy
 ==============
@@ -22,5 +28,26 @@ ostatnie aktywności użytkownika, suma prowadzonych sprzedaży, rankingi sprzed
 
 W prawym górnym rogu panelu po najechaniu na nazwe użytkownika pojawiają się informacje o koncie użytkownia czyli: imię, nazwisko, email, rodzaj uprawnień.
  
- .. image:: /Media/home/info-user.png
+    .. image:: /Media/home/info-user.png
         :width: 300
+
+Obok nazwy użytkownika znajdują się dwie ikony - pierwsza powiadamia o alertach wysyłanych przez Koordynatora do członków zespołu. Natomiast druga ikona informuję o otrzymanych wiadomościach tekstowych.
+    
+    .. image:: /Media/home/notification.png
+        :width: 200
+
+
+
+Menu lewe boczne
+================
+W lewym bocznym menu znajdują się pozycje kierujące do głównych funkcjonalności aplikacji SMS. Pozycja "Administracja" zawiera rozwijane menu, aby je rozwinąć należy ją nacisnąć jak na grafice poniżej. 
+    
+    .. image:: /Media/menu/menu.png
+        :width: 200
+
+Wylogowanie się
+===============
+Przycisk do wylogowania się z aplikacji znajduję się na dole lewego bocznego menu. Aby wylogować się należy nacisnąć przycisk z grafiki poniżej i potwierdzić komunikat z pytaniem o wylogowanie.
+
+    .. image:: /Media/menu/logout-button.png
+        :width: 200

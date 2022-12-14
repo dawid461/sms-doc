@@ -32,12 +32,7 @@ Sales Managment Software(w skrócie SMS) pomaga firmom w łatwy sposób zarządz
    :caption: Interfejs użytkownika:  
 
    Options/first-steps.rst
-   
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :caption: Rodzaje użytkowników: 
-
+   Options/campaign.rst
    Options/users.rst
 
 
