@@ -1,0 +1,13 @@
+Pierwsze kroki
+++++++++++++++
+Panel logowania
+===============
+Aby zalogować się do aplikacji SMS należy przejść do panelu logowania i w polu "Adres Email" podać maila oraz w polu "Hasło" podać hasło do konta.
+
+    .. image:: /Media/login/login.png
+        :width: 600
+    
+
+Resetowanie hasła
+=================
+Reset hasła do Twojego konta SMS jest możliwy po naciśnięciu w panelu logowania przycisku "Odzyskaj Hasło" znajdującego się pod przyciskiem "Zaloguj".
