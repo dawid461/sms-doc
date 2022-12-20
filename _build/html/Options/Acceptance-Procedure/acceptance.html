@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pl" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Procedura odbioru i wdrożenia produktu &mdash; SMS 10.11.2022 r. - dokumentacja</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Indeks" href="../../genindex.html" />
+    <link rel="search" title="Szukaj" href="../../search.html" />
+    <link rel="next" title="Utrzymanie produktu" href="../Service-App/service-app.html" />
+    <link rel="prev" title="Procedura uruchomienia aplikacji" href="../Technical-Instructions/resume-procedure.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> SMS
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Szukaj" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Rozpoczęcie pracy:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../User-Instructions/getting-started.html">Wymogi techniczne</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Interfejs użytkownika:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../User-Instructions/first-steps.html">Pierwsze kroki</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Instructions/campaign.html">Kampanie sprzedażowe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Instructions/users.html">Konta użytkowników</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Dokumentacja techniczna:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Technical-Instructions/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Technical-Instructions/database.html">Baza danych</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Technical-Instructions/library.html">Biblioteki</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Technical-Instructions/environment.html">Wymagania środowiskowe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Technical-Instructions/resume-procedure.html">Procedura uruchomienia aplikacji</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Procedury odbioru i wdrożenia:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Procedura odbioru i wdrożenia produktu</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#odbior-produktu">Odbiór produktu</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sprawdzenie-funkcjonalnosci">Sprawdzenie funkcjonalnośći</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#protokol-zgodnosci-produktu-z-zamowieniem">Protokół zgodności produktu z zamówieniem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#harmonogram-poprawy-wskazanych-usterek-brakow">Harmonogram poprawy wskazanych usterek/braków</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#wdrozenie-produktu">Wdrożenie produktu</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#konfiguracja-srodowiska-i-proces-instalacji">Konfiguracja środowiska i proces instalacji.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#specjalne-wymagania-biznesowe">Specjalne wymagania biznesowe</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#kopia-zapasowa">Kopia zapasowa</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#wykonywanie-kopii-zapasowej">Wykonywanie kopii zapasowej</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rodzaj-kopii">Rodzaj kopii</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zalecany-interwal-wykonywania-kopii">Zalecany interwał wykonywania kopii</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zalecane-miejsce-przechowywania-kopii">Zalecane miejsce przechowywania kopii</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#dokumentacja-odtworzenia-systemu">Dokumentacja odtworzenia systemu</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Utrzymanie produktu:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Service-App/service-app.html">Utrzymanie produktu</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">SMS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Procedura odbioru i wdrożenia produktu</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Options/Acceptance-Procedure/acceptance.rst.txt" rel="nofollow"> Zobacz źródło strony</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="procedura-odbioru-i-wdrozenia-produktu">
+<h1>Procedura odbioru i wdrożenia produktu<a class="headerlink" href="#procedura-odbioru-i-wdrozenia-produktu" title="Permalink to this heading"></a></h1>
+<section id="odbior-produktu">
+<h2>Odbiór produktu<a class="headerlink" href="#odbior-produktu" title="Permalink to this heading"></a></h2>
+<section id="sprawdzenie-funkcjonalnosci">
+<h3>Sprawdzenie funkcjonalnośći<a class="headerlink" href="#sprawdzenie-funkcjonalnosci" title="Permalink to this heading"></a></h3>
+<p>Funkcjonalności zostają sprawdzonę w środowisku testowym klienta.</p>
+</section>
+<section id="protokol-zgodnosci-produktu-z-zamowieniem">
+<h3>Protokół zgodności produktu z zamówieniem<a class="headerlink" href="#protokol-zgodnosci-produktu-z-zamowieniem" title="Permalink to this heading"></a></h3>
+<p>Po prawidłowym przetestowaniu aplikacji u klienta należy podpisać protokół zgodności z zamówieniem w celu sfinalizowania zawartej umowy pomiędzy przedsiębiorstwami.</p>
+</section>
+<section id="harmonogram-poprawy-wskazanych-usterek-brakow">
+<h3>Harmonogram poprawy wskazanych usterek/braków<a class="headerlink" href="#harmonogram-poprawy-wskazanych-usterek-brakow" title="Permalink to this heading"></a></h3>
+<p>Jeśli w zamówionej aplikacji są usterki i braki to należy sporządzić harmonogram wprowadzenia zmian i brakujących elementów wraz z podanym czasem realizacji.</p>
+</section>
+</section>
+<section id="wdrozenie-produktu">
+<h2>Wdrożenie produktu<a class="headerlink" href="#wdrozenie-produktu" title="Permalink to this heading"></a></h2>
+<p>Po uzupełnieniu wszystkich braków i błędów w aplikacji następuję wdrożenie u klienta przez jego wdrożeniowca.</p>
+<section id="konfiguracja-srodowiska-i-proces-instalacji">
+<h3>Konfiguracja środowiska i proces instalacji.<a class="headerlink" href="#konfiguracja-srodowiska-i-proces-instalacji" title="Permalink to this heading"></a></h3>
+<p>Środowisko należy skonfigurować zgodnie z dokumentacją techniczną i rozpocząć proces instalacji aplikacji.</p>
+</section>
+<section id="specjalne-wymagania-biznesowe">
+<h3>Specjalne wymagania biznesowe<a class="headerlink" href="#specjalne-wymagania-biznesowe" title="Permalink to this heading"></a></h3>
+<p>?</p>
+</section>
+</section>
+<section id="kopia-zapasowa">
+<h2>Kopia zapasowa<a class="headerlink" href="#kopia-zapasowa" title="Permalink to this heading"></a></h2>
+<section id="wykonywanie-kopii-zapasowej">
+<h3>Wykonywanie kopii zapasowej<a class="headerlink" href="#wykonywanie-kopii-zapasowej" title="Permalink to this heading"></a></h3>
+<p>Za wykonywanie kopii zapasowej odpowiedzialny jest właściciel systemu.</p>
+</section>
+<section id="rodzaj-kopii">
+<h3>Rodzaj kopii<a class="headerlink" href="#rodzaj-kopii" title="Permalink to this heading"></a></h3>
+<p>Należy wykonywać pełną kopię zapasową.</p>
+</section>
+<section id="zalecany-interwal-wykonywania-kopii">
+<h3>Zalecany interwał wykonywania kopii<a class="headerlink" href="#zalecany-interwal-wykonywania-kopii" title="Permalink to this heading"></a></h3>
+<p>Kopię trzeba wykonywać przynajmniej raz dziennie.</p>
+</section>
+<section id="zalecane-miejsce-przechowywania-kopii">
+<h3>Zalecane miejsce przechowywania kopii<a class="headerlink" href="#zalecane-miejsce-przechowywania-kopii" title="Permalink to this heading"></a></h3>
+<p>Miejscem zalecanym do przechowywania kopi zapasowej jest zewnętrzna chmura.</p>
+</section>
+</section>
+<section id="dokumentacja-odtworzenia-systemu">
+<h2>Dokumentacja odtworzenia systemu<a class="headerlink" href="#dokumentacja-odtworzenia-systemu" title="Permalink to this heading"></a></h2>
+<p>Nie dodawalbym tego. Do skonsultowania z rafalem.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../Technical-Instructions/resume-procedure.html" class="btn btn-neutral float-left" title="Procedura uruchomienia aplikacji" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Poprzedni</a>
+        <a href="../Service-App/service-app.html" class="btn btn-neutral float-right" title="Utrzymanie produktu" accesskey="n" rel="next">Następny <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Czuba i Chorzępa.</p>
+  </div>
+
+  Zbudowano w <a href="https://www.sphinx-doc.org/">Sphinx</a> używając
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    dostarczone przez <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

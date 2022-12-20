@@ -48,3 +48,17 @@ Sales Managment Software(w skrócie SMS) pomaga firmom w łatwy sposób zarządz
    Options/Technical-Instructions/resume-procedure.rst
 
 
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Procedury odbioru i wdrożenia:  
+
+   Options/Acceptance-Procedure/acceptance.rst
+
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Utrzymanie produktu:  
+
+   Options/Service-App/service-app.rst
