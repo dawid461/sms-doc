@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wymogi techniczne &mdash; SMS 10.11.2022 r. - dokumentacja</title>
+  <title>Procedura uruchomienia aplikacji &mdash; SMS 10.11.2022 r. - dokumentacja</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -21,8 +21,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Indeks" href="../../genindex.html" />
     <link rel="search" title="Szukaj" href="../../search.html" />
-    <link rel="next" title="Pierwsze kroki" href="first-steps.html" />
-    <link rel="prev" title="Witamy w dokumentacji aplikacji SMS!" href="../../index.html" /> 
+    <link rel="prev" title="Wymagania środowiskowe" href="environment.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -41,26 +40,28 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Rozpoczęcie pracy:</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Wymogi techniczne</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#polaczenie-internetowe">Połączenie internetowe</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#przegladarka-na-komputerze">Przeglądarka na komputerze</a></li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../User-Instructions/getting-started.html">Wymogi techniczne</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Interfejs użytkownika:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="first-steps.html">Pierwsze kroki</a></li>
-<li class="toctree-l1"><a class="reference internal" href="campaign.html">Kampanie sprzedażowe</a></li>
-<li class="toctree-l1"><a class="reference internal" href="users.html">Konta użytkowników</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Instructions/first-steps.html">Pierwsze kroki</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Instructions/campaign.html">Kampanie sprzedażowe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Instructions/users.html">Konta użytkowników</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Dokumentacja techniczna:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../Technical-Instructions/api.html">API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Technical-Instructions/database.html">Baza danych</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Technical-Instructions/library.html">Biblioteki</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Technical-Instructions/environment.html">Wymagania środowiskowe</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Technical-Instructions/resume-procedure.html">Procedura uruchomienia aplikacji</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="database.html">Baza danych</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library.html">Biblioteki</a></li>
+<li class="toctree-l1"><a class="reference internal" href="environment.html">Wymagania środowiskowe</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Procedura uruchomienia aplikacji</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#srodowisko-dla-dewelopera">Środowisko dla dewelopera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#proces-budowy-nowej-wersji">Proces budowy nowej wersji</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#testy">Testy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dokumentacja">Dokumentacja</a></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -77,9 +78,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a></li>
-      <li class="breadcrumb-item active">Wymogi techniczne</li>
+      <li class="breadcrumb-item active">Procedura uruchomienia aplikacji</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/Options/User-Instructions/getting-started.rst.txt" rel="nofollow"> Zobacz źródło strony</a>
+            <a href="../../_sources/Options/Technical-Instructions/resume-procedure.rst.txt" rel="nofollow"> Zobacz źródło strony</a>
       </li>
   </ul>
   <hr/>
@@ -87,23 +88,23 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="wymogi-techniczne">
-<h1>Wymogi techniczne<a class="headerlink" href="#wymogi-techniczne" title="Permalink to this heading"></a></h1>
-<p>W celu bezproblemowego korzystania z aplikacji SMS zalecamy spełnienie wymagań poniższej minimalnej specyfikacji.</p>
-<section id="polaczenie-internetowe">
-<h2>Połączenie internetowe<a class="headerlink" href="#polaczenie-internetowe" title="Permalink to this heading"></a></h2>
-<p>Aby uniknąć problemów z zapisywaniem podczas korzystania z aplikacji SMS, upewnij się, że połączenie internetowe jest stabilne.</p>
+  <section id="procedura-uruchomienia-aplikacji">
+<h1>Procedura uruchomienia aplikacji<a class="headerlink" href="#procedura-uruchomienia-aplikacji" title="Permalink to this heading"></a></h1>
+<section id="srodowisko-dla-dewelopera">
+<h2>Środowisko dla dewelopera<a class="headerlink" href="#srodowisko-dla-dewelopera" title="Permalink to this heading"></a></h2>
+<p>OPIS</p>
 </section>
-<section id="przegladarka-na-komputerze">
-<h2>Przeglądarka na komputerze<a class="headerlink" href="#przegladarka-na-komputerze" title="Permalink to this heading"></a></h2>
-<p>Zaktualizuj przeglądarki na urządzeniu do najnowszej wersji i upewnij się, że obsługa JavaScript jest włączona:</p>
-<ul class="simple">
-<li><p>Google Chrome, wersja 57 lub nowsza</p></li>
-<li><p>Mozilla Firefox, wersja 52 lub nowsza</p></li>
-<li><p>Safari, wersja 12 lub nowsza</p></li>
-<li><p>Microsoft Edge, wersja 89 lub nowsza</p></li>
-<li><p>Opera, wersja 44 lub nowsza</p></li>
-</ul>
+<section id="proces-budowy-nowej-wersji">
+<h2>Proces budowy nowej wersji<a class="headerlink" href="#proces-budowy-nowej-wersji" title="Permalink to this heading"></a></h2>
+<p>OPIS</p>
+</section>
+<section id="testy">
+<h2>Testy<a class="headerlink" href="#testy" title="Permalink to this heading"></a></h2>
+<p>OPIS</p>
+</section>
+<section id="dokumentacja">
+<h2>Dokumentacja<a class="headerlink" href="#dokumentacja" title="Permalink to this heading"></a></h2>
+<p>OPIS</p>
 </section>
 </section>
 
@@ -111,8 +112,7 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../../index.html" class="btn btn-neutral float-left" title="Witamy w dokumentacji aplikacji SMS!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Poprzedni</a>
-        <a href="first-steps.html" class="btn btn-neutral float-right" title="Pierwsze kroki" accesskey="n" rel="next">Następny <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="environment.html" class="btn btn-neutral float-left" title="Wymagania środowiskowe" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Poprzedni</a>
     </div>
 
   <hr/>

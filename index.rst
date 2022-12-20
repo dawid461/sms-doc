@@ -42,5 +42,9 @@ Sales Managment Software(w skrócie SMS) pomaga firmom w łatwy sposób zarządz
    :caption: Dokumentacja techniczna:  
 
    Options/Technical-Instructions/api.rst
+   Options/Technical-Instructions/database.rst
+   Options/Technical-Instructions/library.rst
+   Options/Technical-Instructions/environment.rst
+   Options/Technical-Instructions/resume-procedure.rst
 
 
