@@ -56,7 +56,11 @@
 <li class="toctree-l1"><a class="reference internal" href="library.html">Biblioteki</a></li>
 <li class="toctree-l1"><a class="reference internal" href="environment.html">Wymagania środowiskowe</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Procedura uruchomienia aplikacji</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#srodowisko-dla-dewelopera">Środowisko dla dewelopera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#srodowisko-dla-dewelopera">Środowisko dla dewelopera</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#co-jest-potrzebne-do-uruchomienia-aplikacji-sms">Co jest potrzebne do uruchomienia aplikacji SMS?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#uruchomienie-aplikacji-sms">Uruchomienie aplikacji SMS</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#proces-budowy-nowej-wersji">Proces budowy nowej wersji</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#testy">Testy</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#dokumentacja">Dokumentacja</a></li>
@@ -92,7 +96,21 @@
 <h1>Procedura uruchomienia aplikacji<a class="headerlink" href="#procedura-uruchomienia-aplikacji" title="Permalink to this heading"></a></h1>
 <section id="srodowisko-dla-dewelopera">
 <h2>Środowisko dla dewelopera<a class="headerlink" href="#srodowisko-dla-dewelopera" title="Permalink to this heading"></a></h2>
-<p>OPIS</p>
+<section id="co-jest-potrzebne-do-uruchomienia-aplikacji-sms">
+<h3>Co jest potrzebne do uruchomienia aplikacji SMS?<a class="headerlink" href="#co-jest-potrzebne-do-uruchomienia-aplikacji-sms" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Zainstalowanie wymaganych zmiennych środowiskowych z dokumentacji technicznej.</p></li>
+<li><p>SQL Server w najnowszej wersji.</p></li>
+<li><p>Dwa dowolne edytory kodu IDE z wbudowanym terminalem do obsługi warstwy aplikacji dla klienta i serwera (np. Visual Studio Code, Visual Studio 2022).</p></li>
+</ul>
+</section>
+<section id="uruchomienie-aplikacji-sms">
+<h3>Uruchomienie aplikacji SMS<a class="headerlink" href="#uruchomienie-aplikacji-sms" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Otwórz folder z projektami warstwy serwerowej w Visual Studio 2022 i wybierz jako projekt startowy SalesManagmentSoftware.API, następnie go uruchom. Po uruchomienie zostanie automatycznie utworzona nowa bazy danych jeśli jeszcze nie istnieje i następnie w przeglądarce otworzy się okienko z Swaggerem.</p></li>
+<li><p>W Visual Studio Code otwórz folder z projektem warstwy dla klienta. Następnie w terminalu wpisz polecenie <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">i</span></code>, które zainstaluje wszystkie potrzebne biblioteki w projekcie. Po poprawnym zainstalowaniu bibliotek, aby uruchomić aplikację należy wpisać polecenie <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">start</span></code>.</p></li>
+</ul>
+</section>
 </section>
 <section id="proces-budowy-nowej-wersji">
 <h2>Proces budowy nowej wersji<a class="headerlink" href="#proces-budowy-nowej-wersji" title="Permalink to this heading"></a></h2>
@@ -104,7 +122,7 @@
 </section>
 <section id="dokumentacja">
 <h2>Dokumentacja<a class="headerlink" href="#dokumentacja" title="Permalink to this heading"></a></h2>
-<p>OPIS</p>
+<p>Dokumentacje należy tworzyć w narzędziu Read the Docs po wprowadzeniu nowej funkcjonalności do projektu lub zmian w już istniejących funkcjonalnościach.</p>
 </section>
 </section>
 

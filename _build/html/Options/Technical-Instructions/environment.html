@@ -58,13 +58,26 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Wymagania środowiskowe</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#front-end">Front End</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#przegladarka">Przeglądarka</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#nodejs">NodeJS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#biblioteki-zewnetrzne-i-ich-wersje">Biblioteki zewnętrzne i ich wersje</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#back-end">Back End</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#asp-net">Asp.Net</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#net">.Net</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nodejs">NodeJS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#sql-server">SQL Server</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#wymagania-sprzetowe">Wymagania sprzętowe</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#wymagania-minimalne-i-zalecane">Wymagania minimalne i zalecane</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Front-End</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#minimalne">Minimalne</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#zalecane">Zalecane</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Back-End</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id3">Minimalne</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">Zalecane</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -100,29 +113,112 @@
 <h1>Wymagania środowiskowe<a class="headerlink" href="#wymagania-srodowiskowe" title="Permalink to this heading"></a></h1>
 <section id="front-end">
 <h2>Front End<a class="headerlink" href="#front-end" title="Permalink to this heading"></a></h2>
-<p>OPIS</p>
+<p>Poniżej znajduje się opis wymaganych technologi wymaganych do uruchomienia aplikacji po stronie Front Endowej.</p>
 <section id="przegladarka">
 <h3>Przeglądarka<a class="headerlink" href="#przegladarka" title="Permalink to this heading"></a></h3>
+<p>Zaktualizuj przeglądarki na urządzeniu do najnowszej wersji i upewnij się, że obsługa JavaScript jest włączona:</p>
+<ul class="simple">
+<li><p>Google Chrome, wersja 57 lub nowsza</p></li>
+<li><p>Mozilla Firefox, wersja 52 lub nowsza</p></li>
+<li><p>Safari, wersja 12 lub nowsza</p></li>
+<li><p>Microsoft Edge, wersja 89 lub nowsza</p></li>
+<li><p>Opera, wersja 44 lub nowsza</p></li>
+</ul>
 </section>
-<section id="nodejs">
-<h3>NodeJS<a class="headerlink" href="#nodejs" title="Permalink to this heading"></a></h3>
-<p>OPIS</p>
+<section id="biblioteki-zewnetrzne-i-ich-wersje">
+<h3>Biblioteki zewnętrzne i ich wersje<a class="headerlink" href="#biblioteki-zewnetrzne-i-ich-wersje" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;@ant-design/icons&quot;</span><span class="p">:</span> <span class="s2">&quot;^4.7.0&quot;</span><span class="p">,</span>
+<span class="s2">&quot;@testing-library/jest-dom&quot;</span><span class="p">:</span> <span class="s2">&quot;^5.16.4&quot;</span><span class="p">,</span>
+<span class="s2">&quot;@testing-library/react&quot;</span><span class="p">:</span> <span class="s2">&quot;^13.1.1&quot;</span><span class="p">,</span>
+<span class="s2">&quot;@testing-library/user-event&quot;</span><span class="p">:</span> <span class="s2">&quot;^13.5.0&quot;</span><span class="p">,</span>
+<span class="s2">&quot;@types/jest&quot;</span><span class="p">:</span> <span class="s2">&quot;^27.4.1&quot;</span><span class="p">,</span>
+<span class="s2">&quot;@types/node&quot;</span><span class="p">:</span> <span class="s2">&quot;^16.11.27&quot;</span><span class="p">,</span>
+<span class="s2">&quot;@types/react&quot;</span><span class="p">:</span> <span class="s2">&quot;^18.0.5&quot;</span><span class="p">,</span>
+<span class="s2">&quot;@types/react-dom&quot;</span><span class="p">:</span> <span class="s2">&quot;^18.0.1&quot;</span><span class="p">,</span>
+<span class="s2">&quot;antd&quot;</span><span class="p">:</span> <span class="s2">&quot;^4.19.5&quot;</span><span class="p">,</span>
+<span class="s2">&quot;axios&quot;</span><span class="p">:</span> <span class="s2">&quot;^0.26.1&quot;</span><span class="p">,</span>
+<span class="s2">&quot;chart.js&quot;</span><span class="p">:</span> <span class="s2">&quot;^3.7.1&quot;</span><span class="p">,</span>
+<span class="s2">&quot;history&quot;</span><span class="p">:</span> <span class="s2">&quot;^5.3.0&quot;</span><span class="p">,</span>
+<span class="s2">&quot;inversify&quot;</span><span class="p">:</span> <span class="s2">&quot;^6.0.1&quot;</span><span class="p">,</span>
+<span class="s2">&quot;lodash&quot;</span><span class="p">:</span> <span class="s2">&quot;^4.17.21&quot;</span><span class="p">,</span>
+<span class="s2">&quot;mobx&quot;</span><span class="p">:</span> <span class="s2">&quot;^6.5.0&quot;</span><span class="p">,</span>
+<span class="s2">&quot;mobx-react-lite&quot;</span><span class="p">:</span> <span class="s2">&quot;^3.3.0&quot;</span><span class="p">,</span>
+<span class="s2">&quot;polished&quot;</span><span class="p">:</span> <span class="s2">&quot;^4.2.2&quot;</span><span class="p">,</span>
+<span class="s2">&quot;react&quot;</span><span class="p">:</span> <span class="s2">&quot;^18.0.0&quot;</span><span class="p">,</span>
+<span class="s2">&quot;react-chartjs-2&quot;</span><span class="p">:</span> <span class="s2">&quot;^4.1.0&quot;</span><span class="p">,</span>
+<span class="s2">&quot;react-dom&quot;</span><span class="p">:</span> <span class="s2">&quot;^18.0.0&quot;</span><span class="p">,</span>
+<span class="s2">&quot;react-hot-toast&quot;</span><span class="p">:</span> <span class="s2">&quot;^2.2.0&quot;</span><span class="p">,</span>
+<span class="s2">&quot;react-lorem-ipsum&quot;</span><span class="p">:</span> <span class="s2">&quot;^1.4.10&quot;</span><span class="p">,</span>
+<span class="s2">&quot;react-router-dom&quot;</span><span class="p">:</span> <span class="s2">&quot;^6.3.0&quot;</span><span class="p">,</span>
+<span class="s2">&quot;react-scripts&quot;</span><span class="p">:</span> <span class="s2">&quot;5.0.1&quot;</span><span class="p">,</span>
+<span class="s2">&quot;reflect-metadata&quot;</span><span class="p">:</span> <span class="s2">&quot;^0.1.13&quot;</span><span class="p">,</span>
+<span class="s2">&quot;styled-components&quot;</span><span class="p">:</span> <span class="s2">&quot;^5.3.5&quot;</span><span class="p">,</span>
+<span class="s2">&quot;styled-reset&quot;</span><span class="p">:</span> <span class="s2">&quot;^4.3.4&quot;</span><span class="p">,</span>
+<span class="s2">&quot;ticks-to-date&quot;</span><span class="p">:</span> <span class="s2">&quot;^1.0.3&quot;</span><span class="p">,</span>
+<span class="s2">&quot;typescript&quot;</span><span class="p">:</span> <span class="s2">&quot;^4.6.3&quot;</span><span class="p">,</span>
+<span class="s2">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;^8.3.2&quot;</span><span class="p">,</span>
+<span class="s2">&quot;web-vitals&quot;</span><span class="p">:</span> <span class="s2">&quot;^2.1.4&quot;</span>
+</pre></div>
+</div>
+</div></blockquote>
 </section>
 </section>
 <section id="back-end">
 <h2>Back End<a class="headerlink" href="#back-end" title="Permalink to this heading"></a></h2>
-<p>OPIS</p>
-<section id="asp-net">
-<h3>Asp.Net<a class="headerlink" href="#asp-net" title="Permalink to this heading"></a></h3>
-<p>Opis</p>
+<p>Poniżej znajduje się spis wymagań niezbędnych do uruchomienia aplikacji po stronie Backendowej.</p>
+<section id="net">
+<h3>.Net<a class="headerlink" href="#net" title="Permalink to this heading"></a></h3>
+<p>W projekcie zastosowany jest .Net w wersji „6.0”.</p>
+</section>
+<section id="nodejs">
+<h3>NodeJS<a class="headerlink" href="#nodejs" title="Permalink to this heading"></a></h3>
+<p>Do poprawnego działania aplikacji wymagany jest Node.JS w wersji 1.19.</p>
 </section>
 <section id="sql-server">
 <h3>SQL Server<a class="headerlink" href="#sql-server" title="Permalink to this heading"></a></h3>
-<p>OPIS</p>
+<p>Do obsługi bazy danych aplikacji SMS wymagana jest najnowsza wersja SQL server.</p>
 </section>
-<section id="wymagania-sprzetowe">
-<h3>Wymagania sprzętowe<a class="headerlink" href="#wymagania-sprzetowe" title="Permalink to this heading"></a></h3>
-<p>OPIS</p>
+</section>
+<section id="wymagania-minimalne-i-zalecane">
+<h2>Wymagania minimalne i zalecane<a class="headerlink" href="#wymagania-minimalne-i-zalecane" title="Permalink to this heading"></a></h2>
+<section id="id1">
+<h3>Front-End<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+<section id="minimalne">
+<h4>Minimalne<a class="headerlink" href="#minimalne" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><p>Dowolna przeglądarka obsługująca JavaScript</p></li>
+<li><p>4 Gb pamięci RAM</p></li>
+</ul>
+</section>
+<section id="zalecane">
+<h4>Zalecane<a class="headerlink" href="#zalecane" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><p>Dowolna przeglądarka obsługująca JavaScript</p></li>
+<li><p>8 Gb pamięci RAM</p></li>
+</ul>
+</section>
+</section>
+<section id="id2">
+<h3>Back-End<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
+<section id="id3">
+<h4>Minimalne<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><p>.Net w wersji 6.0</p></li>
+<li><p>SQL Server w najnowszej wersji</p></li>
+<li><p>Node.JS w wersji 1.19</p></li>
+<li><p>8 Gb pamięci RAM</p></li>
+</ul>
+</section>
+<section id="id4">
+<h4>Zalecane<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><p>.Net w wersji 6.0</p></li>
+<li><p>SQL Server w najnowszej wersji</p></li>
+<li><p>Node.JS w wersji 1.19</p></li>
+<li><p>16 Gb pamięci RAM</p></li>
+</ul>
+</section>
 </section>
 </section>
 </section>
