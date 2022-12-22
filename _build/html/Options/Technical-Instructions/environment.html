@@ -59,12 +59,12 @@
 <li class="toctree-l2"><a class="reference internal" href="#front-end">Front End</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#przegladarka">Przeglądarka</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#biblioteki-zewnetrzne-i-ich-wersje">Biblioteki zewnętrzne i ich wersje</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nodejs">NodeJS</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#back-end">Back End</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#net">.Net</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#nodejs">NodeJS</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#sql-server">SQL Server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sql-server-2019">SQL Server 2019</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#wymagania-minimalne-i-zalecane">Wymagania minimalne i zalecane</a><ul>
@@ -137,39 +137,28 @@
 <h3>Biblioteki zewnętrzne i ich wersje<a class="headerlink" href="#biblioteki-zewnetrzne-i-ich-wersje" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;@ant-design/icons&quot;</span><span class="p">:</span> <span class="s2">&quot;^4.7.0&quot;</span><span class="p">,</span>
-<span class="s2">&quot;@testing-library/jest-dom&quot;</span><span class="p">:</span> <span class="s2">&quot;^5.16.4&quot;</span><span class="p">,</span>
-<span class="s2">&quot;@testing-library/react&quot;</span><span class="p">:</span> <span class="s2">&quot;^13.1.1&quot;</span><span class="p">,</span>
-<span class="s2">&quot;@testing-library/user-event&quot;</span><span class="p">:</span> <span class="s2">&quot;^13.5.0&quot;</span><span class="p">,</span>
-<span class="s2">&quot;@types/jest&quot;</span><span class="p">:</span> <span class="s2">&quot;^27.4.1&quot;</span><span class="p">,</span>
 <span class="s2">&quot;@types/node&quot;</span><span class="p">:</span> <span class="s2">&quot;^16.11.27&quot;</span><span class="p">,</span>
 <span class="s2">&quot;@types/react&quot;</span><span class="p">:</span> <span class="s2">&quot;^18.0.5&quot;</span><span class="p">,</span>
 <span class="s2">&quot;@types/react-dom&quot;</span><span class="p">:</span> <span class="s2">&quot;^18.0.1&quot;</span><span class="p">,</span>
 <span class="s2">&quot;antd&quot;</span><span class="p">:</span> <span class="s2">&quot;^4.19.5&quot;</span><span class="p">,</span>
 <span class="s2">&quot;axios&quot;</span><span class="p">:</span> <span class="s2">&quot;^0.26.1&quot;</span><span class="p">,</span>
 <span class="s2">&quot;chart.js&quot;</span><span class="p">:</span> <span class="s2">&quot;^3.7.1&quot;</span><span class="p">,</span>
-<span class="s2">&quot;history&quot;</span><span class="p">:</span> <span class="s2">&quot;^5.3.0&quot;</span><span class="p">,</span>
-<span class="s2">&quot;inversify&quot;</span><span class="p">:</span> <span class="s2">&quot;^6.0.1&quot;</span><span class="p">,</span>
-<span class="s2">&quot;lodash&quot;</span><span class="p">:</span> <span class="s2">&quot;^4.17.21&quot;</span><span class="p">,</span>
 <span class="s2">&quot;mobx&quot;</span><span class="p">:</span> <span class="s2">&quot;^6.5.0&quot;</span><span class="p">,</span>
 <span class="s2">&quot;mobx-react-lite&quot;</span><span class="p">:</span> <span class="s2">&quot;^3.3.0&quot;</span><span class="p">,</span>
-<span class="s2">&quot;polished&quot;</span><span class="p">:</span> <span class="s2">&quot;^4.2.2&quot;</span><span class="p">,</span>
 <span class="s2">&quot;react&quot;</span><span class="p">:</span> <span class="s2">&quot;^18.0.0&quot;</span><span class="p">,</span>
 <span class="s2">&quot;react-chartjs-2&quot;</span><span class="p">:</span> <span class="s2">&quot;^4.1.0&quot;</span><span class="p">,</span>
 <span class="s2">&quot;react-dom&quot;</span><span class="p">:</span> <span class="s2">&quot;^18.0.0&quot;</span><span class="p">,</span>
-<span class="s2">&quot;react-hot-toast&quot;</span><span class="p">:</span> <span class="s2">&quot;^2.2.0&quot;</span><span class="p">,</span>
-<span class="s2">&quot;react-lorem-ipsum&quot;</span><span class="p">:</span> <span class="s2">&quot;^1.4.10&quot;</span><span class="p">,</span>
 <span class="s2">&quot;react-router-dom&quot;</span><span class="p">:</span> <span class="s2">&quot;^6.3.0&quot;</span><span class="p">,</span>
-<span class="s2">&quot;react-scripts&quot;</span><span class="p">:</span> <span class="s2">&quot;5.0.1&quot;</span><span class="p">,</span>
-<span class="s2">&quot;reflect-metadata&quot;</span><span class="p">:</span> <span class="s2">&quot;^0.1.13&quot;</span><span class="p">,</span>
 <span class="s2">&quot;styled-components&quot;</span><span class="p">:</span> <span class="s2">&quot;^5.3.5&quot;</span><span class="p">,</span>
 <span class="s2">&quot;styled-reset&quot;</span><span class="p">:</span> <span class="s2">&quot;^4.3.4&quot;</span><span class="p">,</span>
-<span class="s2">&quot;ticks-to-date&quot;</span><span class="p">:</span> <span class="s2">&quot;^1.0.3&quot;</span><span class="p">,</span>
 <span class="s2">&quot;typescript&quot;</span><span class="p">:</span> <span class="s2">&quot;^4.6.3&quot;</span><span class="p">,</span>
-<span class="s2">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;^8.3.2&quot;</span><span class="p">,</span>
-<span class="s2">&quot;web-vitals&quot;</span><span class="p">:</span> <span class="s2">&quot;^2.1.4&quot;</span>
 </pre></div>
 </div>
 </div></blockquote>
+</section>
+<section id="nodejs">
+<h3>NodeJS<a class="headerlink" href="#nodejs" title="Permalink to this heading"></a></h3>
+<p>Do poprawnego działania aplikacji wymagany jest Node.JS w wersji 1.19.</p>
 </section>
 </section>
 <section id="back-end">
@@ -179,13 +168,9 @@
 <h3>.Net<a class="headerlink" href="#net" title="Permalink to this heading"></a></h3>
 <p>W projekcie zastosowany jest .Net w wersji „6.0”.</p>
 </section>
-<section id="nodejs">
-<h3>NodeJS<a class="headerlink" href="#nodejs" title="Permalink to this heading"></a></h3>
-<p>Do poprawnego działania aplikacji wymagany jest Node.JS w wersji 1.19.</p>
-</section>
-<section id="sql-server">
-<h3>SQL Server<a class="headerlink" href="#sql-server" title="Permalink to this heading"></a></h3>
-<p>Do obsługi bazy danych aplikacji SMS wymagana jest najnowsza wersja SQL server.</p>
+<section id="sql-server-2019">
+<h3>SQL Server 2019<a class="headerlink" href="#sql-server-2019" title="Permalink to this heading"></a></h3>
+<p>Do obsługi bazy danych aplikacji SMS wymagana jest wersja SQL Server 2019.</p>
 </section>
 </section>
 <section id="wymagania-minimalne-i-zalecane">
@@ -213,18 +198,16 @@
 <h4>Minimalne<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h4>
 <ul class="simple">
 <li><p>.Net w wersji 6.0</p></li>
-<li><p>SQL Server w najnowszej wersji</p></li>
-<li><p>Node.JS w wersji 1.19</p></li>
-<li><p>8 Gb pamięci RAM</p></li>
+<li><p>SQL Server 2019</p></li>
+<li><p>4 Gb pamięci RAM</p></li>
 </ul>
 </section>
 <section id="id4">
 <h4>Zalecane<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h4>
 <ul class="simple">
 <li><p>.Net w wersji 6.0</p></li>
-<li><p>SQL Server w najnowszej wersji</p></li>
-<li><p>Node.JS w wersji 1.19</p></li>
-<li><p>16 Gb pamięci RAM</p></li>
+<li><p>SQL Server 2019</p></li>
+<li><p>8 Gb pamięci RAM</p></li>
 </ul>
 </section>
 </section>

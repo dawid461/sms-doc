@@ -19,11 +19,11 @@ Uruchomienie aplikacji SMS
 
 Proces budowy nowej wersji
 ==========================
-OPIS
+Utworzenie nowego brancha --> Wysłanie gotowego brancha z nową wersją aplikacji do testów --> Odpowiedź testera z listą funkcjonalności do poprawy lub zaakceptowanie brancha --> Przekazanie brancha do wdrożenia w nowej wersji aplikacji    
 
 Testy
 =====
-OPIS
+Testy jednostkowe oraz integracyjne uruchamiane są automatycznie przy commitowaniu zmiań na danym branchu.
 
 Dokumentacja
 ============

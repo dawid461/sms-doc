@@ -24,10 +24,6 @@ Konfiguracja środowiska i proces instalacji.
 --------------------------------------------
 Środowisko należy skonfigurować zgodnie z dokumentacją techniczną i rozpocząć proces instalacji aplikacji.
 
-Specjalne wymagania biznesowe
------------------------------
-?
-
 Kopia zapasowa
 ==============
 
