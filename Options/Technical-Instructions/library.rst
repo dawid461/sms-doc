@@ -1,6 +1,6 @@
-Biblioteki
-++++++++++
+3. Biblioteki
++++++++++++++
 
-Interfejs
-=========
+3.1. Interfejs
+==============
 

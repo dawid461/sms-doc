@@ -1,8 +1,8 @@
-API
-+++
+1. API
+++++++
 
-Account
-=======
+1.1. Account
+============
 Api "Account" służy do rejestrowania użytkowników w aplikacji SMS oraz do pobierania danych na ich temat.
 
 
@@ -112,8 +112,8 @@ Pobiera rodzaje ról użytkowników w aplikacjii.
     "errorMessage": null,"timeGenerated": "2022-12-16T10:58:45.8036735Z"
 
 
-Auth
-====
+1.2. Auth
+=========
 Api "Auth" służy do autoryzowania użytkownika podczas logowania oraz do wylogowania użytkownika.
 
 Endpoint auth/login
@@ -172,8 +172,8 @@ Weryfikuję wprowadzone dane logowania użytkownika.
 
 
 
-Campaign
-========
+1.3. Campaign
+=============
 Api "Campaign" odpowiada za tworzenie, filtrowanie oraz pobieranie danych o aktualnie prowadzonych kampaniach.
 
 Endpoint campaign
@@ -255,8 +255,8 @@ Wprowadza do bazy danych informację ekonomiczne na temat prowadzonej kampanii.
 
 
 
-Customer
-========
+1.4. Customer
+=============
 Api "Customer" odpowiada za przechowywanie danych o klientach.
 
 Endpoint customer

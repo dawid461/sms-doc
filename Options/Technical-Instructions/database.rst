@@ -1,8 +1,8 @@
-Baza danych
-+++++++++++
+2. Baza danych
+++++++++++++++
 
-Tabele
-======
+2.1. Tabele
+===========
 
 AspNetRole Claims
 -----------------

@@ -1,16 +1,16 @@
-Konta użytkowników
-++++++++++++++++++
+3. Konta użytkowników
++++++++++++++++++++++
 
-Tabela użytkownicy
-==================
+3.1. Tabela użytkownicy
+=======================
 Po przejściu do zakładki "Konta użytkowników" wyświetlona zostaje lista z utworzonymi kontami i najważniejszymi informacjami z nimi związanymi.
  
     .. image:: /Media/users/table-of-users.png
         :width: 600
 
 
-Tworzenie nowego konta użytkownika
-==================================
+3.2. Tworzenie nowego konta użytkownika
+=======================================
 Aby stworzyć nowego użytkownika należy nacisnąć wyżej tabeli przycisk "Utwórz nowe konto". Następnie wyświetlony zostanie formularz rejestracji nowego użytkownika w aplikacji SMS.
 Należy uzupełnić wymagane pola i nacisnąć "Utwórz konto" w celu utworzenia konta.
 
@@ -18,8 +18,8 @@ Należy uzupełnić wymagane pola i nacisnąć "Utwórz konto" w celu utworzenia
         :width: 500
 
 
-Edycja istniejącego użytkownika
-===============================
+3.3. Edycja istniejącego użytkownika
+====================================
 Do edytowania istniejących kont został dodany przycisk "Edytuj" w tabeli z spisem wszystkich użytkowników w aplikacji SMS. Każda pozycja w tabeli z kontem użytkownika w ostatniej 
 rubryce zawiera przycisk "Edytuj", należy go nacisnąć. Następnie zostanie wyświetlony formularz do edycji użytkownika wraz z pobranymi aktualnymi danymi na jego temat. 
 Po pomyślnej edycji trzeba nacisnąć przycisk "Zapisz zmiany" w celu wprowadzenia zmian.
@@ -28,8 +28,8 @@ Po pomyślnej edycji trzeba nacisnąć przycisk "Zapisz zmiany" w celu wprowadze
         :width: 500
 
 
-Rodzaje kont użytkowników
-=========================
+3.4. Rodzaje kont użytkowników
+==============================
 Konto administratora
 --------------------
 **Uprawnienia i role:**

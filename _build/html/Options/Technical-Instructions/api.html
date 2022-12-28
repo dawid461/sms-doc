@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>API &mdash; SMS 10.11.2022 r. - dokumentacja</title>
+  <title>1. API &mdash; SMS 10.11.2022 r. - dokumentacja</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -21,8 +21,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Indeks" href="../../genindex.html" />
     <link rel="search" title="Szukaj" href="../../search.html" />
-    <link rel="next" title="Baza danych" href="database.html" />
-    <link rel="prev" title="Konta użytkowników" href="../User-Instructions/users.html" /> 
+    <link rel="next" title="2. Baza danych" href="database.html" />
+    <link rel="prev" title="3. Konta użytkowników" href="../User-Instructions/users.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -46,28 +46,28 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Interfejs użytkownika:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../User-Instructions/first-steps.html">Pierwsze kroki</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../User-Instructions/campaign.html">Kampanie sprzedażowe</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../User-Instructions/users.html">Konta użytkowników</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Instructions/first-steps.html">1. Pierwsze kroki</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Instructions/campaign.html">2. Kampanie sprzedażowe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Instructions/users.html">3. Konta użytkowników</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Dokumentacja techniczna:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">API</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#account">Account</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#account">1.1. Account</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#endpoint-account-register">Endpoint account/register</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#endpoint-account-id">Endpoint account/{id}</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#endpoint-account">Endpoint account</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#endpoint-account-roles">Endpoint account/roles</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#auth">Auth</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#auth">1.2. Auth</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#endpoint-auth-login">Endpoint auth/login</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#endpoint-auth-logout">Endpoint auth/logout</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#endpoint-auth-refresh">Endpoint auth/refresh</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#endpoint-auth-verify">Endpoint auth/verify</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#campaign">Campaign</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#campaign">1.3. Campaign</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#endpoint-campaign">Endpoint campaign</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#endpoint-campaign-id">Endpoint campaign/{id}</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#endpoint-campaign-filter">Endpoint campaign/filter</a></li>
@@ -76,7 +76,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#endpoint-campaign-id-rates">Endpoint campaign/{id}/rates</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#customer">Customer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#customer">1.4. Customer</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#endpoint-customer">Endpoint customer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#endpoint-customer-id">Endpoint customer/{id}</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#endpoint-customer-contact">Endpoint customer/contact</a></li>
@@ -85,18 +85,18 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="database.html">Baza danych</a></li>
-<li class="toctree-l1"><a class="reference internal" href="library.html">Biblioteki</a></li>
-<li class="toctree-l1"><a class="reference internal" href="environment.html">Wymagania środowiskowe</a></li>
-<li class="toctree-l1"><a class="reference internal" href="resume-procedure.html">Procedura uruchomienia aplikacji</a></li>
+<li class="toctree-l1"><a class="reference internal" href="database.html">2. Baza danych</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library.html">3. Biblioteki</a></li>
+<li class="toctree-l1"><a class="reference internal" href="environment.html">4. Wymagania środowiskowe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resume-procedure.html">5. Procedura uruchomienia aplikacji</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Procedury odbioru i wdrożenia:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../Acceptance-Procedure/acceptance.html">Procedura odbioru i wdrożenia produktu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Acceptance-Procedure/acceptance.html">1. Procedura odbioru i wdrożenia produktu</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Utrzymanie produktu:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../Service-App/service-app.html">Utrzymanie produktu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Service-App/service-app.html">1. Utrzymanie produktu</a></li>
 </ul>
 
         </div>
@@ -113,7 +113,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a></li>
-      <li class="breadcrumb-item active">API</li>
+      <li class="breadcrumb-item active">1. API</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/Options/Technical-Instructions/api.rst.txt" rel="nofollow"> Zobacz źródło strony</a>
       </li>
@@ -124,9 +124,9 @@
            <div itemprop="articleBody">
              
   <section id="api">
-<h1>API<a class="headerlink" href="#api" title="Permalink to this heading"></a></h1>
+<h1>1. API<a class="headerlink" href="#api" title="Permalink to this heading"></a></h1>
 <section id="account">
-<h2>Account<a class="headerlink" href="#account" title="Permalink to this heading"></a></h2>
+<h2>1.1. Account<a class="headerlink" href="#account" title="Permalink to this heading"></a></h2>
 <p>Api „Account” służy do rejestrowania użytkowników w aplikacji SMS oraz do pobierania danych na ich temat.</p>
 <section id="endpoint-account-register">
 <h3>Endpoint account/register<a class="headerlink" href="#endpoint-account-register" title="Permalink to this heading"></a></h3>
@@ -237,7 +237,7 @@
 </section>
 </section>
 <section id="auth">
-<h2>Auth<a class="headerlink" href="#auth" title="Permalink to this heading"></a></h2>
+<h2>1.2. Auth<a class="headerlink" href="#auth" title="Permalink to this heading"></a></h2>
 <p>Api „Auth” służy do autoryzowania użytkownika podczas logowania oraz do wylogowania użytkownika.</p>
 <section id="endpoint-auth-login">
 <h3>Endpoint auth/login<a class="headerlink" href="#endpoint-auth-login" title="Permalink to this heading"></a></h3>
@@ -297,7 +297,7 @@
 </section>
 </section>
 <section id="campaign">
-<h2>Campaign<a class="headerlink" href="#campaign" title="Permalink to this heading"></a></h2>
+<h2>1.3. Campaign<a class="headerlink" href="#campaign" title="Permalink to this heading"></a></h2>
 <p>Api „Campaign” odpowiada za tworzenie, filtrowanie oraz pobieranie danych o aktualnie prowadzonych kampaniach.</p>
 <section id="endpoint-campaign">
 <h3>Endpoint campaign<a class="headerlink" href="#endpoint-campaign" title="Permalink to this heading"></a></h3>
@@ -379,7 +379,7 @@
 </section>
 </section>
 <section id="customer">
-<h2>Customer<a class="headerlink" href="#customer" title="Permalink to this heading"></a></h2>
+<h2>1.4. Customer<a class="headerlink" href="#customer" title="Permalink to this heading"></a></h2>
 <p>Api „Customer” odpowiada za przechowywanie danych o klientach.</p>
 <section id="endpoint-customer">
 <h3>Endpoint customer<a class="headerlink" href="#endpoint-customer" title="Permalink to this heading"></a></h3>
@@ -444,8 +444,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../User-Instructions/users.html" class="btn btn-neutral float-left" title="Konta użytkowników" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Poprzedni</a>
-        <a href="database.html" class="btn btn-neutral float-right" title="Baza danych" accesskey="n" rel="next">Następny <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../User-Instructions/users.html" class="btn btn-neutral float-left" title="3. Konta użytkowników" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Poprzedni</a>
+        <a href="database.html" class="btn btn-neutral float-right" title="2. Baza danych" accesskey="n" rel="next">Następny <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

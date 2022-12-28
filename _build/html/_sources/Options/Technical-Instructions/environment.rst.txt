@@ -1,8 +1,8 @@
-Wymagania środowiskowe
-++++++++++++++++++++++
+4. Wymagania środowiskowe
++++++++++++++++++++++++++
 
-Front End
-=========
+4.1. Front End
+==============
 Poniżej znajduje się opis wymaganych technologi wymaganych do uruchomienia aplikacji po stronie Front Endowej.
 
 Przeglądarka
@@ -40,8 +40,8 @@ NodeJS
 ------
 Do poprawnego działania aplikacji wymagany jest Node.JS w wersji 1.19.
 
-Back End
-========
+4.2. Back End
+=============
 Poniżej znajduje się spis wymagań niezbędnych do uruchomienia aplikacji po stronie Backendowej.
 
 .Net
@@ -53,8 +53,8 @@ SQL Server 2019
 Do obsługi bazy danych aplikacji SMS wymagana jest wersja SQL Server 2019.
 
 
-Wymagania minimalne i zalecane
-==============================
+4.3. Wymagania minimalne i zalecane
+===================================
 
 Front-End
 ---------
