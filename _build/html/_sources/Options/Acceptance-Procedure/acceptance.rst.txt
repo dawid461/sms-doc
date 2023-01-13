@@ -33,7 +33,7 @@ Za wykonywanie kopii zapasowej odpowiedzialny jest właściciel systemu.
 
 Rodzaj kopii
 ------------
-Należy wykonywać pełną kopię zapasową.
+Należy wykonywać pełną kopię zapasową bazy danych SQL.
 
 Zalecany interwał wykonywania kopii
 -----------------------------------

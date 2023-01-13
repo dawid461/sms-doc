@@ -44,6 +44,5 @@ Badania oraz monitorowanie wydajności
 -------------------------------------
 
 #. API - na czas odpowiedzi API wpływa ilość użytkowników w systemie oraz zasoby serwera klienta na którym została uruchomiona aplikacja SMS.
-#. Interfejs użytkownika - Na wydajność aplikacji wpływa filtrowanie dużej bazy kampanii sprzedażowych. Okres wyszukiwania może być wydłużony nawet do 20 sekund. 
+#. Interfejs użytkownika - Na wydajność aplikacji wpływa filtrowanie dużej bazy kampanii sprzedażowych. Okres wyszukiwania może być wydłużony nawet do 19 sekund( jest to akceptowalna wartość). 
 #. Źródła danych - Najdłużej trwającym zapytaniem sql-owym jest zapytanie podczas filtrowania kampanii sprzedażowych i w zależności od ilości danych może trwać do 19 sekund
-#. Rps/throughput - Dla aplikacji SMS nie powinien więcej wynosić niż 3 sekundy.

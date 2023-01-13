@@ -17,28 +17,11 @@ Zaktualizuj przeglądarki na urządzeniu do najnowszej wersji i upewnij się, ż
 
 Biblioteki zewnętrzne i ich wersje
 ----------------------------------
-    ::
-
-    "@ant-design/icons": "^4.7.0",
-    "@types/node": "^16.11.27",
-    "@types/react": "^18.0.5",
-    "@types/react-dom": "^18.0.1",
-    "antd": "^4.19.5",
-    "axios": "^0.26.1",
-    "chart.js": "^3.7.1",
-    "mobx": "^6.5.0",
-    "mobx-react-lite": "^3.3.0",
-    "react": "^18.0.0",
-    "react-chartjs-2": "^4.1.0",
-    "react-dom": "^18.0.0",
-    "react-router-dom": "^6.3.0",
-    "styled-components": "^5.3.5",
-    "styled-reset": "^4.3.4",
-    "typescript": "^4.6.3",
+Wszystkie biblioteki wykorzystane w projekcie są zawartę w pliku package.json
 
 NodeJS
 ------
-Do poprawnego działania aplikacji wymagany jest Node.JS w wersji 1.19.
+Do poprawnego działania aplikacji wymagany jest Node.JS w wersji v16.14.2.
 
 4.2. Back End
 =============
