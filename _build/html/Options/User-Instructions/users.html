@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>3. Konta użytkowników &mdash; SMS 10.11.2022 r. - dokumentacja</title>
+  <title>3. Administracja &mdash; SMS 10.11.2022 r. - dokumentacja</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -21,7 +21,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Indeks" href="../../genindex.html" />
     <link rel="search" title="Szukaj" href="../../search.html" />
-    <link rel="next" title="1. API" href="../Technical-Instructions/api.html" />
+    <link rel="next" title="4. Powiadomienia" href="notifications.html" />
     <link rel="prev" title="2. Kampanie sprzedażowe" href="campaign.html" /> 
 </head>
 
@@ -48,18 +48,24 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="first-steps.html">1. Pierwsze kroki</a></li>
 <li class="toctree-l1"><a class="reference internal" href="campaign.html">2. Kampanie sprzedażowe</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">3. Konta użytkowników</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. Administracja</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#tabela-uzytkownicy">3.1. Tabela użytkownicy</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#tworzenie-nowego-konta-uzytkownika">3.2. Tworzenie nowego konta użytkownika</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#edycja-istniejacego-uzytkownika">3.3. Edycja istniejącego użytkownika</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#szczegoly-uzytkownika">3.3. Szczegóły użytkownika</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#rodzaje-kont-uzytkownikow">3.4. Rodzaje kont użytkowników</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#konto-administratora">Konto administratora</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#konto-koordynatora">Konto koordynatora</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#konto-konsultanta">Konto konsultanta</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#zarzadzanie-rolami">3.5. Zarządzanie rolami</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#grupy-kontaktowe">3.6. Grupy kontaktowe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tworzenie-nowej-grupy-kontaktowej">3.7. Tworzenie nowej grupy kontaktowej</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#szczegoly-grupy">3.8. Szczegóły grupy</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="notifications.html">4. Powiadomienia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data.html">5. Wizualizacje wyników</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Dokumentacja techniczna:</span></p>
 <ul>
@@ -92,7 +98,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a></li>
-      <li class="breadcrumb-item active">3. Konta użytkowników</li>
+      <li class="breadcrumb-item active">3. Administracja</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/Options/User-Instructions/users.rst.txt" rel="nofollow"> Zobacz źródło strony</a>
       </li>
@@ -102,11 +108,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="konta-uzytkownikow">
-<h1>3. Konta użytkowników<a class="headerlink" href="#konta-uzytkownikow" title="Permalink to this heading"></a></h1>
+  <section id="administracja">
+<h1>3. Administracja<a class="headerlink" href="#administracja" title="Permalink to this heading"></a></h1>
+<p>Po przejściu do zakładki administracja włącza się panel startowy z wszystkimi dostępnymi opcjami tejże funkcjonalności.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/administracja_main.png"><img alt="../../_images/administracja_main.png" src="../../_images/administracja_main.png" style="width: 600px;" /></a>
+</div></blockquote>
 <section id="tabela-uzytkownicy">
 <h2>3.1. Tabela użytkownicy<a class="headerlink" href="#tabela-uzytkownicy" title="Permalink to this heading"></a></h2>
-<p>Po przejściu do zakładki „Konta użytkowników” wyświetlona zostaje lista z utworzonymi kontami i najważniejszymi informacjami z nimi związanymi.</p>
+<p>Po przejściu do zakładki <code class="docutils literal notranslate"><span class="pre">Administracja</span> <span class="pre">--&gt;</span> <span class="pre">Zarządzanie</span> <span class="pre">użytkownikami</span></code> wyświetlona zostaje lista z utworzonymi kontami i najważniejszymi informacjami z nimi związanymi.</p>
 <blockquote>
 <div><a class="reference internal image-reference" href="../../_images/table-of-users.png"><img alt="../../_images/table-of-users.png" src="../../_images/table-of-users.png" style="width: 600px;" /></a>
 </div></blockquote>
@@ -114,15 +124,17 @@
 <section id="tworzenie-nowego-konta-uzytkownika">
 <h2>3.2. Tworzenie nowego konta użytkownika<a class="headerlink" href="#tworzenie-nowego-konta-uzytkownika" title="Permalink to this heading"></a></h2>
 <p>Aby stworzyć nowego użytkownika należy nacisnąć wyżej tabeli przycisk „Utwórz nowe konto”. Następnie wyświetlony zostanie formularz rejestracji nowego użytkownika w aplikacji SMS.
-Należy uzupełnić wymagane pola i nacisnąć „Utwórz konto” w celu utworzenia konta.</p>
-<a class="reference internal image-reference" href="../../_images/register-new-user.png"><img alt="../../_images/register-new-user.png" src="../../_images/register-new-user.png" style="width: 500px;" /></a>
+Należy uzupełnić wymagane pola i nacisnąć „Zapisz” w celu utworzenia konta.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/register-new-user.png"><img alt="../../_images/register-new-user.png" src="../../_images/register-new-user.png" style="width: 600px;" /></a>
+</div></blockquote>
 </section>
-<section id="edycja-istniejacego-uzytkownika">
-<h2>3.3. Edycja istniejącego użytkownika<a class="headerlink" href="#edycja-istniejacego-uzytkownika" title="Permalink to this heading"></a></h2>
-<p>Do edytowania istniejących kont został dodany przycisk „Edytuj” w tabeli z spisem wszystkich użytkowników w aplikacji SMS. Każda pozycja w tabeli z kontem użytkownika w ostatniej
-rubryce zawiera przycisk „Edytuj”, należy go nacisnąć. Następnie zostanie wyświetlony formularz do edycji użytkownika wraz z pobranymi aktualnymi danymi na jego temat.
-Po pomyślnej edycji trzeba nacisnąć przycisk „Zapisz zmiany” w celu wprowadzenia zmian.</p>
-<a class="reference internal image-reference" href="../../_images/edit-user.png"><img alt="../../_images/edit-user.png" src="../../_images/edit-user.png" style="width: 500px;" /></a>
+<section id="szczegoly-uzytkownika">
+<h2>3.3. Szczegóły użytkownika<a class="headerlink" href="#szczegoly-uzytkownika" title="Permalink to this heading"></a></h2>
+<p>Do podglądu szczegółowych informacji o użytkowniku został stworzony przycisk „Szczegóły” w tabeli z spisem wszystkich użytkowników w aplikacji SMS.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/user-info.png"><img alt="../../_images/user-info.png" src="../../_images/user-info.png" style="width: 600px;" /></a>
+</div></blockquote>
 </section>
 <section id="rodzaje-kont-uzytkownikow">
 <h2>3.4. Rodzaje kont użytkowników<a class="headerlink" href="#rodzaje-kont-uzytkownikow" title="Permalink to this heading"></a></h2>
@@ -176,6 +188,36 @@ Po pomyślnej edycji trzeba nacisnąć przycisk „Zapisz zmiany” w celu wprow
 </ul>
 </section>
 </section>
+<section id="zarzadzanie-rolami">
+<h2>3.5. Zarządzanie rolami<a class="headerlink" href="#zarzadzanie-rolami" title="Permalink to this heading"></a></h2>
+<p>W tej sekcji można przeglądać istniejące uprawnienia dla użytkowników oraz przypisywać im nowe role.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/administracja_role_main.png"><img alt="../../_images/administracja_role_main.png" src="../../_images/administracja_role_main.png" style="width: 600px;" /></a>
+</div></blockquote>
+</section>
+<section id="grupy-kontaktowe">
+<h2>3.6. Grupy kontaktowe<a class="headerlink" href="#grupy-kontaktowe" title="Permalink to this heading"></a></h2>
+<p>W zakładce Grupy kontaktowe możesz przeglądać istniejące grupy, towrzyć nowe oraz przypisywać do nich użytkowników.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/administracja_grupy_kontaktowe_main.png"><img alt="../../_images/administracja_grupy_kontaktowe_main.png" src="../../_images/administracja_grupy_kontaktowe_main.png" style="width: 600px;" /></a>
+</div></blockquote>
+</section>
+<section id="tworzenie-nowej-grupy-kontaktowej">
+<h2>3.7. Tworzenie nowej grupy kontaktowej<a class="headerlink" href="#tworzenie-nowej-grupy-kontaktowej" title="Permalink to this heading"></a></h2>
+<p>Aby stworzyć nową grupe kontaktową należy wyżej tabeli ze spisem wszystkich grup nacisnąć przycisk „Utwórz nową grupę kontaktową”.
+Następnie należy uzupełnić wszystkie pola formularza i nacisnąć przycisk „Dodaj”.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/administracja_grupy_kontaktowe_nowy.png"><img alt="../../_images/administracja_grupy_kontaktowe_nowy.png" src="../../_images/administracja_grupy_kontaktowe_nowy.png" style="width: 600px;" /></a>
+</div></blockquote>
+</section>
+<section id="szczegoly-grupy">
+<h2>3.8. Szczegóły grupy<a class="headerlink" href="#szczegoly-grupy" title="Permalink to this heading"></a></h2>
+<p>Aby sprawdzić szczegóły danej Grupy należy w tabeli z spisem wszystkich grup nacisnąć pozycję w kolumnie „Id”.
+W otwartym formularzu istnieje możliwość przypisania nowych użytkowników do grupy w polu „Użytkownicy”. Po dokonaniu zmian należy nacisnąć przycisk „Zapisz”.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/administracja_grupy_kontaktowe_edycja.png"><img alt="../../_images/administracja_grupy_kontaktowe_edycja.png" src="../../_images/administracja_grupy_kontaktowe_edycja.png" style="width: 600px;" /></a>
+</div></blockquote>
+</section>
 </section>
 
 
@@ -183,7 +225,7 @@ Po pomyślnej edycji trzeba nacisnąć przycisk „Zapisz zmiany” w celu wprow
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="campaign.html" class="btn btn-neutral float-left" title="2. Kampanie sprzedażowe" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Poprzedni</a>
-        <a href="../Technical-Instructions/api.html" class="btn btn-neutral float-right" title="1. API" accesskey="n" rel="next">Następny <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="notifications.html" class="btn btn-neutral float-right" title="4. Powiadomienia" accesskey="n" rel="next">Następny <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

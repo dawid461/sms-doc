@@ -34,6 +34,9 @@ Sales Managment Software(w skrócie SMS) pomaga firmom w łatwy sposób zarządz
    Options/User-Instructions/first-steps.rst
    Options/User-Instructions/campaign.rst
    Options/User-Instructions/users.rst
+   Options/User-Instructions/notifications.rst
+   Options/User-Instructions/data.rst
+
 
 
 .. toctree::
@@ -46,7 +49,6 @@ Sales Managment Software(w skrócie SMS) pomaga firmom w łatwy sposób zarządz
    Options/Technical-Instructions/library.rst
    Options/Technical-Instructions/environment.rst
    Options/Technical-Instructions/resume-procedure.rst
-
 
 .. toctree::
    :maxdepth: 2

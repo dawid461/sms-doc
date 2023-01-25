@@ -13,15 +13,17 @@ Aby zalogować się do aplikacji SMS należy przejść do panelu logowania i w p
 
 1.2. Resetowanie hasła
 ======================
-Reset hasła do Twojego konta SMS jest możliwy po naciśnięciu w panelu logowania przycisku "Odzyskaj Hasło" znajdującego się pod przyciskiem "Zaloguj".
+Reset hasła do Twojego konta SMS jest możliwy po naciśnięciu w panelu logowania przycisku "Odzyskiwanie hasła" znajdującego się pod przyciskiem "Zaloguj".
 Następnie należy postępować zgodnie z instrukcjami wyświetlanymi na ekranie.
-
+  
+  .. image:: /Media/login/reset_pass_01.png
+        :width: 600
+    
 
 
 1.3. Panel startowy
 ===================
-W panelu startowym użytkownika zaprezentowany jest zbiór najważniejszych statystyk i danych takich jak: 
-ostatnie aktywności użytkownika, suma prowadzonych sprzedaży, rankingi sprzedaży, trend sprzedaży, efekty operacyjne, płatności, wizyty.
+W panelu startowym użytkownika znajdują się zakładki prowadzące do głównych funkcjonalności aplikacji SMS.
 
     .. image:: /Media/home/panel-start.png
         :width: 600
@@ -40,7 +42,7 @@ Obok nazwy użytkownika znajdują się dwie ikony - pierwsza powiadamia o alerta
 
 1.4. Menu lewe boczne
 =====================
-W lewym bocznym menu znajdują się pozycje kierujące do głównych funkcjonalności aplikacji SMS. Pozycja "Administracja" zawiera rozwijane menu, aby je rozwinąć należy ją nacisnąć jak na grafice poniżej. 
+W lewym bocznym menu znajdują się pozycje kierujące do głównych funkcjonalności aplikacji SMS.
     
     .. image:: /Media/menu/menu.png
         :width: 200
@@ -49,5 +51,13 @@ W lewym bocznym menu znajdują się pozycje kierujące do głównych funkcjonaln
 ====================
 Przycisk do wylogowania się z aplikacji znajduję się na dole lewego bocznego menu. Aby wylogować się należy nacisnąć przycisk z grafiki poniżej i potwierdzić komunikat z pytaniem o wylogowanie.
 
-    .. image:: /Media/menu/logout-button.png
+    .. image:: /Media/menu/menu2.png
         :width: 200
+
+1.6. Dokumentacja
+=================
+Link do dokumentacji znajduję się w lewym bocznym menu powyżej przycisku "Wyloguj".
+        
+1.7. Zwijanie menu
+==================
+Istnieje możliwość częściowego schowania menu za pomocą strzałki poniżej przycisku "wyloguj" w menu lewym bocznym.

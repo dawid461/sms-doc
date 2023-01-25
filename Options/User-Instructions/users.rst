@@ -1,9 +1,13 @@
-3. Konta użytkowników
-+++++++++++++++++++++
+3. Administracja
+++++++++++++++++
+Po przejściu do zakładki administracja włącza się panel startowy z wszystkimi dostępnymi opcjami tejże funkcjonalności.
+
+    .. image:: /Media/users/administracja_main.png
+        :width: 600
 
 3.1. Tabela użytkownicy
 =======================
-Po przejściu do zakładki "Konta użytkowników" wyświetlona zostaje lista z utworzonymi kontami i najważniejszymi informacjami z nimi związanymi.
+Po przejściu do zakładki ``Administracja --> Zarządzanie użytkownikami`` wyświetlona zostaje lista z utworzonymi kontami i najważniejszymi informacjami z nimi związanymi.
  
     .. image:: /Media/users/table-of-users.png
         :width: 600
@@ -12,20 +16,18 @@ Po przejściu do zakładki "Konta użytkowników" wyświetlona zostaje lista z u
 3.2. Tworzenie nowego konta użytkownika
 =======================================
 Aby stworzyć nowego użytkownika należy nacisnąć wyżej tabeli przycisk "Utwórz nowe konto". Następnie wyświetlony zostanie formularz rejestracji nowego użytkownika w aplikacji SMS.
-Należy uzupełnić wymagane pola i nacisnąć "Utwórz konto" w celu utworzenia konta.
+Należy uzupełnić wymagane pola i nacisnąć "Zapisz" w celu utworzenia konta.
 
-.. image:: /Media/users/register-new-user.png
-        :width: 500
+     .. image:: /Media/users/register-new-user.png
+        :width: 600
 
 
-3.3. Edycja istniejącego użytkownika
-====================================
-Do edytowania istniejących kont został dodany przycisk "Edytuj" w tabeli z spisem wszystkich użytkowników w aplikacji SMS. Każda pozycja w tabeli z kontem użytkownika w ostatniej 
-rubryce zawiera przycisk "Edytuj", należy go nacisnąć. Następnie zostanie wyświetlony formularz do edycji użytkownika wraz z pobranymi aktualnymi danymi na jego temat. 
-Po pomyślnej edycji trzeba nacisnąć przycisk "Zapisz zmiany" w celu wprowadzenia zmian.
+3.3. Szczegóły użytkownika
+==========================
+Do podglądu szczegółowych informacji o użytkowniku został stworzony przycisk "Szczegóły" w tabeli z spisem wszystkich użytkowników w aplikacji SMS.
 
-.. image:: /Media/users/edit-user.png
-        :width: 500
+     .. image:: /Media/users/user-info.png
+        :width: 600
 
 
 3.4. Rodzaje kont użytkowników
@@ -77,3 +79,36 @@ Konto konsultanta
 * Użytkownik posiada historię wysłanych notyfikacji.
 * Zalogowany użytkownik posiada dostęp do komunikatora z podziałem na grupy zgodnie z wcześniej nadanymi uprawnieniami.
 * Użytkownik posiada mozliwość komunikacji z dwolonym użytkownikiem systemu 1:1 ( komunikacja prywatna ).
+
+3.5. Zarządzanie rolami
+=======================
+W tej sekcji można przeglądać istniejące uprawnienia dla użytkowników oraz przypisywać im nowe role.
+
+     .. image:: /Media/users/administracja_role_main.png
+        :width: 600
+
+3.6. Grupy kontaktowe
+=====================
+W zakładce Grupy kontaktowe możesz przeglądać istniejące grupy, towrzyć nowe oraz przypisywać do nich użytkowników.
+
+     .. image:: /Media/users/administracja_grupy_kontaktowe_main.png
+        :width: 600
+
+3.7. Tworzenie nowej grupy kontaktowej
+======================================
+Aby stworzyć nową grupe kontaktową należy wyżej tabeli ze spisem wszystkich grup nacisnąć przycisk "Utwórz nową grupę kontaktową". 
+Następnie należy uzupełnić wszystkie pola formularza i nacisnąć przycisk "Dodaj".
+
+     .. image:: /Media/users/administracja_grupy_kontaktowe_nowy.png
+        :width: 600
+
+3.8. Szczegóły grupy
+====================
+Aby sprawdzić szczegóły danej Grupy należy w tabeli z spisem wszystkich grup nacisnąć pozycję w kolumnie "Id". 
+W otwartym formularzu istnieje możliwość przypisania nowych użytkowników do grupy w polu "Użytkownicy". Po dokonaniu zmian należy nacisnąć przycisk "Zapisz".
+
+     .. image:: /Media/users/administracja_grupy_kontaktowe_edycja.png
+        :width: 600
+
+
+
