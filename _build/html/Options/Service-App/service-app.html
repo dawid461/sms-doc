@@ -54,8 +54,7 @@
 <p class="caption" role="heading"><span class="caption-text">Dokumentacja techniczna:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../Technical-Instructions/api.html">1. API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Technical-Instructions/database.html">2. Baza danych</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Technical-Instructions/library.html">3. Biblioteki</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Technical-Instructions/database.html">2. Bazy danych</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Technical-Instructions/environment.html">4. Wymagania środowiskowe</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Technical-Instructions/resume-procedure.html">5. Procedura uruchomienia aplikacji</a></li>
 </ul>
@@ -80,6 +79,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#badania-oraz-monitorowanie-wydajnosci">Badania oraz monitorowanie wydajności</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#logi-aplikacji">1.4. Logi aplikacji</a></li>
 </ul>
 </li>
 </ul>
@@ -155,6 +155,14 @@
 <li><p>Źródła danych - Najdłużej trwającym zapytaniem sql-owym jest zapytanie podczas filtrowania kampanii sprzedażowych i w zależności od ilości danych może trwać do 19 sekund</p></li>
 </ol>
 </section>
+</section>
+<section id="logi-aplikacji">
+<h2>1.4. Logi aplikacji<a class="headerlink" href="#logi-aplikacji" title="Permalink to this heading"></a></h2>
+<p>Wszystkie logi aplikacji są przesyłane do systemu elastic search. Poniżej znajduję się screen z przykładowymi logami.</p>
+<p><code class="docutils literal notranslate"><span class="pre">https://www.elastic.co/kibana?ultron=B-Stack-Trials-EMEA-C-Exact&amp;gambit=Stack-Kibana&amp;blade=adwords-s&amp;hulk=paid&amp;Device=c&amp;thor=elasticsearch%20and%20kibana</span></code></p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/logs.png"><img alt="../../_images/logs.png" src="../../_images/logs.png" style="width: 600px;" /></a>
+</div></blockquote>
 </section>
 </section>
 

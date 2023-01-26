@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>2. Baza danych &mdash; SMS 10.11.2022 r. - dokumentacja</title>
+  <title>2. Bazy danych &mdash; SMS 10.11.2022 r. - dokumentacja</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -21,7 +21,6 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Indeks" href="../../genindex.html" />
     <link rel="search" title="Szukaj" href="../../search.html" />
-    <link rel="next" title="3. Biblioteki" href="library.html" />
     <link rel="prev" title="1. API" href="api.html" /> 
 </head>
 
@@ -55,14 +54,32 @@
 <p class="caption" role="heading"><span class="caption-text">Dokumentacja techniczna:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="api.html">1. API</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Baza danych</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#tabele">2.1. Tabele</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#aspnetrole-claims">AspNetRole Claims</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Bazy danych</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#db-powiadomienia">2.1. db.powiadomienia</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dbo-notification">2.1.1 dbo.Notification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dbo-notifications">2.1.2 dbo.Notifications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dbo-notificationhistory">2.1.3 dbo.NotificationHistory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dbo-groups">2.1.4 dbo.Groups</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dbo-contactgroups">2.1.5 dbo.ContactGroups</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#db-identity">2.2. db.identity</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#nazwy-tabel-z-linkami-do-dokumentacji-microsoftu">Nazwy tabel z linkami do dokumentacji Microsoftu:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#db-kampanie">2.3. db.kampanie</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dbo-campaigns">2.3.1 dbo.Campaigns</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dbo-rates">2.3.2 dbo.Rates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dbo-consultants">2.3.3 dbo.Consultants</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dbo-scores">2.3.4 dbo.Scores</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dbo-scorecustomfields">2.3.5 dbo.ScoreCustomFields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dbo-customers">2.3.6 dbo.Customers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dbo-addresses">2.3.7 dbo.Addresses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dbo-contacts">2.3.8 dbo.Contacts</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="library.html">3. Biblioteki</a></li>
 <li class="toctree-l1"><a class="reference internal" href="environment.html">4. Wymagania środowiskowe</a></li>
 <li class="toctree-l1"><a class="reference internal" href="resume-procedure.html">5. Procedura uruchomienia aplikacji</a></li>
 </ul>
@@ -89,7 +106,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a></li>
-      <li class="breadcrumb-item active">2. Baza danych</li>
+      <li class="breadcrumb-item active">2. Bazy danych</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/Options/Technical-Instructions/database.rst.txt" rel="nofollow"> Zobacz źródło strony</a>
       </li>
@@ -99,12 +116,242 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="baza-danych">
-<h1>2. Baza danych<a class="headerlink" href="#baza-danych" title="Permalink to this heading"></a></h1>
-<section id="tabele">
-<h2>2.1. Tabele<a class="headerlink" href="#tabele" title="Permalink to this heading"></a></h2>
-<section id="aspnetrole-claims">
-<h3>AspNetRole Claims<a class="headerlink" href="#aspnetrole-claims" title="Permalink to this heading"></a></h3>
+  <section id="bazy-danych">
+<h1>2. Bazy danych<a class="headerlink" href="#bazy-danych" title="Permalink to this heading"></a></h1>
+<section id="db-powiadomienia">
+<h2>2.1. db.powiadomienia<a class="headerlink" href="#db-powiadomienia" title="Permalink to this heading"></a></h2>
+<p>Odpowiada za powiadomienia systemowe w aplikacji SMS.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/db_notifications.png"><img alt="../../_images/db_notifications.png" src="../../_images/db_notifications.png" style="width: 600px;" /></a>
+</div></blockquote>
+<section id="dbo-notification">
+<h3>2.1.1 dbo.Notification<a class="headerlink" href="#dbo-notification" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>Reprezentuje dane notyfikacji systemowej</dt><dd><ul class="simple">
+<li><p>Id: unikalny identyfikator [guid]</p></li>
+<li><p>CreatorId: unikalny identyfikator użytkownika który utworzył wiadomość [guid]</p></li>
+<li><p>Tilte: tytuł wiadomości [nvarchar]</p></li>
+<li><p>Body: wiadomość [nvarchar]</p></li>
+<li><p>State: status aktywny/nieaktywny [boo]</p></li>
+<li><p>CreatedAt: data utworzenia [datetime]</p></li>
+<li><p>ModifiedAt: data modyfikacji [datetime]</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="dbo-notifications">
+<h3>2.1.2 dbo.Notifications<a class="headerlink" href="#dbo-notifications" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>Reprezentuje zbiór wiadomości wysłanych do użytkowników systemu</dt><dd><ul class="simple">
+<li><p>NotificationId: unikalny identyfikator [guid]</p></li>
+<li><p>UserId: unikalny identyfikator użytkownika [guid]</p></li>
+<li><p>State: status aktywny/nieaktywny [boo]</p></li>
+<li><p>CreatedAt: data utworzenia [datetime]</p></li>
+<li><p>ModifiedAt: data modyfikacji [datetime]</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="dbo-notificationhistory">
+<h3>2.1.3 dbo.NotificationHistory<a class="headerlink" href="#dbo-notificationhistory" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>Reprezentuje historię utworzonej notyfikacji systemowej</dt><dd><ul class="simple">
+<li><p>Id: unikalny identyfikator [guid]</p></li>
+<li><p>NotificationId: unikalny identyfikator notyfikacji [guid]</p></li>
+<li><p>UserId: unikalny identyfikator użytkownika [guid]</p></li>
+<li><p>Type: rodzaj zdarzenia [int]</p></li>
+<li><p>State: status aktywny/nieaktywny [boo]</p></li>
+<li><p>CreatedAt: data utworzenia [datetime]</p></li>
+<li><p>ModifiedAt: data modyfikacji [datetime]</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="dbo-groups">
+<h3>2.1.4 dbo.Groups<a class="headerlink" href="#dbo-groups" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>Reprezentuje grupy kontaktowe</dt><dd><ul class="simple">
+<li><p>Id: unikalny identyfikator [guid]</p></li>
+<li><p>Name: nazwa grupy [nvarchar]</p></li>
+<li><p>Description: opis [nvarchar]</p></li>
+<li><p>GroupType: rodzaj grupy kontaktowej [int]</p></li>
+<li><p>State: status aktywny/nieaktywny [boo]</p></li>
+<li><p>CreatedAt: data utworzenia [datetime]</p></li>
+<li><p>ModifiedAt: data modyfikacji [datetime]</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="dbo-contactgroups">
+<h3>2.1.5 dbo.ContactGroups<a class="headerlink" href="#dbo-contactgroups" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>Reprezentuje użytkowników przypisanych do grup kontaktowych</dt><dd><ul class="simple">
+<li><p>UserId: unikalny identyfikator użytkownika [guid]</p></li>
+<li><p>GroupId: unikalny identyfikator grupy [guid]</p></li>
+<li><p>State: status aktywny/nieaktywny [boo]</p></li>
+<li><p>CreatedAt: data utworzenia [datetime]</p></li>
+<li><p>ModifiedAt: data modyfikacji [datetime]</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+</section>
+<section id="db-identity">
+<h2>2.2. db.identity<a class="headerlink" href="#db-identity" title="Permalink to this heading"></a></h2>
+<p>Link do dokumentacji Microsoftu:
+<code class="docutils literal notranslate"><span class="pre">https://learn.microsoft.com/pl-pl/aspnet/core/security/authentication/identity?view=aspnetcore-7.0&amp;tabs=visual-studio</span></code></p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/db_identity.png"><img alt="../../_images/db_identity.png" src="../../_images/db_identity.png" style="width: 600px;" /></a>
+</div></blockquote>
+<section id="nazwy-tabel-z-linkami-do-dokumentacji-microsoftu">
+<h3>Nazwy tabel z linkami do dokumentacji Microsoftu:<a class="headerlink" href="#nazwy-tabel-z-linkami-do-dokumentacji-microsoftu" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>AspNetUsers: <code class="docutils literal notranslate"><span class="pre">https://learn.microsoft.com/pl-pl/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identityuser?view=aspnetcore-1.1</span></code></p></li>
+<li><p>AspNetUserTokens: <code class="docutils literal notranslate"><span class="pre">https://learn.microsoft.com/pl-pl/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identityuserlogin-1?view=aspnetcore-1.1</span></code></p></li>
+<li><p>AspNetUserLogins: <code class="docutils literal notranslate"><span class="pre">https://learn.microsoft.com/pl-pl/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identityuserlogin-1?view=aspnetcore-1.1</span></code></p></li>
+<li><p>AspNetUserClaims: <code class="docutils literal notranslate"><span class="pre">https://learn.microsoft.com/pl-pl/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identityuserclaim-1?view=aspnetcore-1.1</span></code></p></li>
+<li><p>AspNetUserRoles: <code class="docutils literal notranslate"><span class="pre">https://learn.microsoft.com/pl-pl/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identityuserrole-1?view=aspnetcore-1.1</span></code></p></li>
+<li><p>AspNetRoles: <code class="docutils literal notranslate"><span class="pre">https://learn.microsoft.com/pl-pl/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identityrole?view=aspnetcore-1.1</span></code></p></li>
+<li><p>AspNetRoleClaims: <code class="docutils literal notranslate"><span class="pre">https://learn.microsoft.com/pl-pl/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identityroleclaim-1?view=aspnetcore-1.1</span></code></p></li>
+</ul>
+</div></blockquote>
+</section>
+</section>
+<section id="db-kampanie">
+<h2>2.3. db.kampanie<a class="headerlink" href="#db-kampanie" title="Permalink to this heading"></a></h2>
+<p>odpowiada za przechowywanie danych o prowadzonych kampaniach sprzedażowych.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/db_campaigns.png"><img alt="../../_images/db_campaigns.png" src="../../_images/db_campaigns.png" style="width: 600px;" /></a>
+</div></blockquote>
+<section id="dbo-campaigns">
+<h3>2.3.1 dbo.Campaigns<a class="headerlink" href="#dbo-campaigns" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>Reprezentuje kampanie sprzedażowe zarejestrowane w systemie</dt><dd><ul class="simple">
+<li><p>Id: unikalny identyfikator [guid]</p></li>
+<li><p>Name: nazwa kampanii [nvarchar]</p></li>
+<li><p>Type: rodzaj kampanii [int]</p></li>
+<li><p>CustomerId: unikalny identyfikator przypisanego klienta [guid]</p></li>
+<li><p>Start: data rozpoczęcia [datetime]</p></li>
+<li><p>End: data zakończenia [datetime]</p></li>
+<li><p>Records: liczba zadanych rekordów [int]</p></li>
+<li><p>State: status aktywny/nieaktywny [boo]</p></li>
+<li><p>CreatedAt: data utworzenia [datetime]</p></li>
+<li><p>ModifiedAt: data modyfikacji [datetime]</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="dbo-rates">
+<h3>2.3.2 dbo.Rates<a class="headerlink" href="#dbo-rates" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>Reprezentuje cele sprzedażowe przypisane do kampanii</dt><dd><ul class="simple">
+<li><p>Id: unikalny identyfikator [guid]</p></li>
+<li><p>Amount: zadana wartość wyrażona w PLN [decimal]</p></li>
+<li><p>Quantity: zadana ilość wyrażona w sztukach [decimal]</p></li>
+<li><p>Efficiency: efektywność wyrażona w % [decimal]</p></li>
+<li><p>Realization: zadany procent realizacji wyrażona w %  [decimal]</p></li>
+<li><p>CampaignId: unikalny identyfikator przypisanej kampanii [guid]</p></li>
+<li><p>ConsultantId: unikalny identyfiaktor przypisanego konsultanta [guid]</p></li>
+<li><p>State: status aktywny/nieaktywny [boo]</p></li>
+<li><p>CreatedAt: data utworzenia [datetime]</p></li>
+<li><p>ModifiedAt: data modyfikacji [datetime]</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="dbo-consultants">
+<h3>2.3.3 dbo.Consultants<a class="headerlink" href="#dbo-consultants" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>Reprezentuje konsultantów przypisanych do kampanii sprzedażowej</dt><dd><ul class="simple">
+<li><p>Id: unikalny identyfikator [guid]</p></li>
+<li><p>CampaignId: unikalny identyfikator przypisanej kampanii [guid]</p></li>
+<li><p>State: status aktywny/nieaktywny [boo]</p></li>
+<li><p>CreatedAt: data utworzenia [datetime]</p></li>
+<li><p>ModifiedAt: data modyfikacji [datetime]</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="dbo-scores">
+<h3>2.3.4 dbo.Scores<a class="headerlink" href="#dbo-scores" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>Reprezentuje wyniki sprzedażowe przypisane do konsultanta oraz kampanii sprzedażowej</dt><dd><ul class="simple">
+<li><p>Id: unikalny identyfikator [guid]</p></li>
+<li><p>ConsultantId: unikalny identyfiaktor przypisanego konsultanta [guid]</p></li>
+<li><p>CampaignId: unikalny identyfikator przypisanej kampanii [guid]</p></li>
+<li><p>RecordId: unikalny identyfikator rekordu [guid]</p></li>
+<li><p>CallStatus: Status połączenia [int]</p></li>
+<li><p>ConnectionDate: Data połączenia [datetime]</p></li>
+<li><p>State: status aktywny/nieaktywny [boo]</p></li>
+<li><p>CreatedAt: data utworzenia [datetime]</p></li>
+<li><p>ModifiedAt: data modyfikacji [datetime]</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="dbo-scorecustomfields">
+<h3>2.3.5 dbo.ScoreCustomFields<a class="headerlink" href="#dbo-scorecustomfields" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>Reprezentuje konfigurowalne pola powiązane z wynikiem sprzedażowym</dt><dd><ul class="simple">
+<li><p>Id: unikalny identyfikator [guid]</p></li>
+<li><p>Name: Nazwa pola: [nvarchar]</p></li>
+<li><p>Description: opis pola [nvarchar]</p></li>
+<li><p>Type: rodzaj pola [int]</p></li>
+<li><p>ScoreId: unikalny identyfikator wyniki sprzedażowego [guid]</p></li>
+<li><p>State: status aktywny/nieaktywny [boo]</p></li>
+<li><p>CreatedAt: data utworzenia [datetime]</p></li>
+<li><p>ModifiedAt: data modyfikacji [datetime]</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="dbo-customers">
+<h3>2.3.6 dbo.Customers<a class="headerlink" href="#dbo-customers" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>Reprezentuje dane klienta powiązanego z kampanią sprzedażową</dt><dd><ul class="simple">
+<li><p>Id: unikalny identyfikator [guid]</p></li>
+<li><p>Name: nazwa klienta [ nvarchar]</p></li>
+<li><p>AddressId: unikalny identyfikator przypisanego adresu [guid]</p></li>
+<li><p>State: status aktywny/nieaktywny [boo]</p></li>
+<li><p>CreatedAt: data utworzenia [datetime]</p></li>
+<li><p>ModifiedAt: data modyfikacji [datetime]</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="dbo-addresses">
+<h3>2.3.7 dbo.Addresses<a class="headerlink" href="#dbo-addresses" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>Reprezentuje adres przypisany do klienta</dt><dd><ul class="simple">
+<li><p>Id: unikalny identyfikator [guid]</p></li>
+<li><p>City: miasto [nvarchar]</p></li>
+<li><p>ZipCode: kod pocztowy [nvarchar]</p></li>
+<li><p>Street: ulica [nvarchar]</p></li>
+<li><p>State: status aktywny/nieaktywny [boo]</p></li>
+<li><p>CreatedAt: data utworzenia [datetime]</p></li>
+<li><p>ModifiedAt: data modyfikacji [datetime]</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="dbo-contacts">
+<h3>2.3.8 dbo.Contacts<a class="headerlink" href="#dbo-contacts" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>Reprezentuje adres przypisany do klienta</dt><dd><ul class="simple">
+<li><p>Id: unikalny identyfikator [guid]</p></li>
+<li><p>FirstName: imię [nvarchar]</p></li>
+<li><p>LastName: nazwisko [nvarchar]</p></li>
+<li><p>Email: adres email [nvarchar]</p></li>
+<li><p>Phone: numer telefony [nvarchar]</p></li>
+<li><p>CustomerId: unikalny identyfiaktor przypisanego klienta [guid]</p></li>
+<li><p>CampaignId: unikalny identyfikator przypisanej kampanii [guid]</p></li>
+<li><p>State: status aktywny/nieaktywny [boo]</p></li>
+<li><p>CreatedAt: data utworzenia [datetime]</p></li>
+<li><p>ModifiedAt: data modyfikacji [datetime]</p></li>
+</ul>
+</dd>
+</dl>
 </section>
 </section>
 </section>
@@ -114,7 +361,6 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="api.html" class="btn btn-neutral float-left" title="1. API" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Poprzedni</a>
-        <a href="library.html" class="btn btn-neutral float-right" title="3. Biblioteki" accesskey="n" rel="next">Następny <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

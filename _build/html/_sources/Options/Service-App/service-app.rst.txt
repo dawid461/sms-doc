@@ -46,3 +46,13 @@ Badania oraz monitorowanie wydajności
 #. API - na czas odpowiedzi API wpływa ilość użytkowników w systemie oraz zasoby serwera klienta na którym została uruchomiona aplikacja SMS.
 #. Interfejs użytkownika - Na wydajność aplikacji wpływa filtrowanie dużej bazy kampanii sprzedażowych. Okres wyszukiwania może być wydłużony nawet do 19 sekund( jest to akceptowalna wartość). 
 #. Źródła danych - Najdłużej trwającym zapytaniem sql-owym jest zapytanie podczas filtrowania kampanii sprzedażowych i w zależności od ilości danych może trwać do 19 sekund
+
+1.4. Logi aplikacji
+===================
+Wszystkie logi aplikacji są przesyłane do systemu elastic search. Poniżej znajduję się screen z przykładowymi logami. 
+
+``https://www.elastic.co/kibana?ultron=B-Stack-Trials-EMEA-C-Exact&gambit=Stack-Kibana&blade=adwords-s&hulk=paid&Device=c&thor=elasticsearch%20and%20kibana``
+
+    .. image:: /Media/logs/logs.png
+        :width: 600
+
