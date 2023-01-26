@@ -15,7 +15,7 @@ Reprezentuje dane notyfikacji systemowej
     * CreatorId: unikalny identyfikator użytkownika który utworzył wiadomość [guid]
     * Tilte: tytuł wiadomości [nvarchar]
     * Body: wiadomość [nvarchar]
-    * State: status aktywny/nieaktywny [boo]
+    * State: status aktywny/nieaktywny [bool]
     * CreatedAt: data utworzenia [datetime]
     * ModifiedAt: data modyfikacji [datetime]
     
@@ -24,7 +24,7 @@ Reprezentuje dane notyfikacji systemowej
 Reprezentuje zbiór wiadomości wysłanych do użytkowników systemu
     * NotificationId: unikalny identyfikator [guid]
     * UserId: unikalny identyfikator użytkownika [guid]
-    * State: status aktywny/nieaktywny [boo]
+    * State: status aktywny/nieaktywny [bool]
     * CreatedAt: data utworzenia [datetime]
     * ModifiedAt: data modyfikacji [datetime]
 
@@ -35,7 +35,7 @@ Reprezentuje historię utworzonej notyfikacji systemowej
     * NotificationId: unikalny identyfikator notyfikacji [guid]
     * UserId: unikalny identyfikator użytkownika [guid]
     * Type: rodzaj zdarzenia [int]
-    * State: status aktywny/nieaktywny [boo]
+    * State: status aktywny/nieaktywny [bool]
     * CreatedAt: data utworzenia [datetime]
     * ModifiedAt: data modyfikacji [datetime]
 
@@ -46,7 +46,7 @@ Reprezentuje grupy kontaktowe
     * Name: nazwa grupy [nvarchar]
     * Description: opis [nvarchar]
     * GroupType: rodzaj grupy kontaktowej [int]
-    * State: status aktywny/nieaktywny [boo]
+    * State: status aktywny/nieaktywny [bool]
     * CreatedAt: data utworzenia [datetime]
     * ModifiedAt: data modyfikacji [datetime]
 
@@ -55,7 +55,7 @@ Reprezentuje grupy kontaktowe
 Reprezentuje użytkowników przypisanych do grup kontaktowych 
     * UserId: unikalny identyfikator użytkownika [guid]
     * GroupId: unikalny identyfikator grupy [guid]
-    * State: status aktywny/nieaktywny [boo]
+    * State: status aktywny/nieaktywny [bool]
     * CreatedAt: data utworzenia [datetime]
     * ModifiedAt: data modyfikacji [datetime]
 
@@ -97,7 +97,7 @@ Reprezentuje kampanie sprzedażowe zarejestrowane w systemie
     * Start: data rozpoczęcia [datetime]
     * End: data zakończenia [datetime]
     * Records: liczba zadanych rekordów [int]
-    * State: status aktywny/nieaktywny [boo]
+    * State: status aktywny/nieaktywny []
     * CreatedAt: data utworzenia [datetime]
     * ModifiedAt: data modyfikacji [datetime]
 
@@ -111,7 +111,7 @@ Reprezentuje cele sprzedażowe przypisane do kampanii
     * Realization: zadany procent realizacji wyrażona w %  [decimal]
     * CampaignId: unikalny identyfikator przypisanej kampanii [guid]
     * ConsultantId: unikalny identyfiaktor przypisanego konsultanta [guid]
-    * State: status aktywny/nieaktywny [boo]
+    * State: status aktywny/nieaktywny [bool]
     * CreatedAt: data utworzenia [datetime]
     * ModifiedAt: data modyfikacji [datetime]
 
@@ -120,7 +120,7 @@ Reprezentuje cele sprzedażowe przypisane do kampanii
 Reprezentuje konsultantów przypisanych do kampanii sprzedażowej
     * Id: unikalny identyfikator [guid]
     * CampaignId: unikalny identyfikator przypisanej kampanii [guid]
-    * State: status aktywny/nieaktywny [boo]
+    * State: status aktywny/nieaktywny [bool]
     * CreatedAt: data utworzenia [datetime]
     * ModifiedAt: data modyfikacji [datetime]
 
@@ -133,7 +133,7 @@ Reprezentuje wyniki sprzedażowe przypisane do konsultanta oraz kampanii sprzeda
     * RecordId: unikalny identyfikator rekordu [guid]
     * CallStatus: Status połączenia [int]
     * ConnectionDate: Data połączenia [datetime]
-    * State: status aktywny/nieaktywny [boo]
+    * State: status aktywny/nieaktywny [bool]
     * CreatedAt: data utworzenia [datetime]
     * ModifiedAt: data modyfikacji [datetime]
 
@@ -145,7 +145,7 @@ Reprezentuje konfigurowalne pola powiązane z wynikiem sprzedażowym
     * Description: opis pola [nvarchar]
     * Type: rodzaj pola [int]
     * ScoreId: unikalny identyfikator wyniki sprzedażowego [guid]
-    * State: status aktywny/nieaktywny [boo]
+    * State: status aktywny/nieaktywny [bool]
     * CreatedAt: data utworzenia [datetime]
     * ModifiedAt: data modyfikacji [datetime]
 
@@ -155,7 +155,7 @@ Reprezentuje dane klienta powiązanego z kampanią sprzedażową
     * Id: unikalny identyfikator [guid]
     * Name: nazwa klienta [ nvarchar]
     * AddressId: unikalny identyfikator przypisanego adresu [guid]
-    * State: status aktywny/nieaktywny [boo]
+    * State: status aktywny/nieaktywny [bool]
     * CreatedAt: data utworzenia [datetime]
     * ModifiedAt: data modyfikacji [datetime]
 
@@ -166,7 +166,7 @@ Reprezentuje adres przypisany do klienta
     * City: miasto [nvarchar]
     * ZipCode: kod pocztowy [nvarchar]
     * Street: ulica [nvarchar]
-    * State: status aktywny/nieaktywny [boo]
+    * State: status aktywny/nieaktywny [bool]
     * CreatedAt: data utworzenia [datetime]
     * ModifiedAt: data modyfikacji [datetime]
 
@@ -180,7 +180,7 @@ Reprezentuje adres przypisany do klienta
     * Phone: numer telefony [nvarchar]
     * CustomerId: unikalny identyfiaktor przypisanego klienta [guid]
     * CampaignId: unikalny identyfikator przypisanej kampanii [guid]
-    * State: status aktywny/nieaktywny [boo]
+    * State: status aktywny/nieaktywny [bool]
     * CreatedAt: data utworzenia [datetime]
     * ModifiedAt: data modyfikacji [datetime]
 
